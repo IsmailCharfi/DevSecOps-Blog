@@ -1,0 +1,23 @@
+.notifications .badge {
+    position: absolute;
+    bottom: -20px;
+    left: 18px;
+    font-size: var(--small-xs);
+}
+
+.notifications a {
+    color: var(--font-light-color);
+}
+
+.notifications .custom-dropdown-item {
+    font-size: var(--small);
+    padding: 0.25rem 0.5rem;
+}
+
+.notifications .custom-dropdown-item[read="unread"] a::before {
+    content: "\2022";
+    display: inline;
+    margin-right: 8px;
+    font-size: var(--h5);
+    color: #51adcf;
+}

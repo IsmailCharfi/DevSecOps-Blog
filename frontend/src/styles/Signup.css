@@ -1,0 +1,22 @@
+.signup-form-container {
+    margin-top: 2.75rem;
+    background-color: var(--primary-light-color);
+    padding: 1.5rem;
+    box-shadow: 2px 2px 15px 4px rgb(0, 0, 0, 0.15);
+}
+
+.signup-form-container a {
+    color: var(--primary-dark-color);
+    text-decoration: underline;
+}
+
+.error-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error-message p {
+    margin: 0 0 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+}

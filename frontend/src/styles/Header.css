@@ -1,0 +1,65 @@
+.navbar {
+    background-color: var(--primary-dark-color);
+    box-shadow: 2px 2px 15px 4px rgb(0, 0, 0, 0.15);
+    padding: 0 10px;
+}
+
+.navbar .navbar-brand h2 {
+    color: var(--font-light-color);
+}
+
+.navbar .navbar-toggler {
+    color: var(--font-light-color);
+}
+
+.navbar-nav,
+.my-account {
+    color: var(--font-light-color);
+    margin-left: auto;
+}
+
+.my-account .nav-item button {
+    font-size: 1.2rem;
+    color: var(--font-light-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.my-account .navbar-nav .nav-item {
+    margin-right: 5px;
+}
+
+.my-account img {
+    width: 30px;
+    height: 30px;
+}
+
+.my-account .dropdown {
+    cursor: pointer;
+}
+
+.my-account .dropdown-menu {
+    left: -5.25rem;
+    font-size: 1rem;
+    background-color: var(--primary-dark-color);
+    transform-origin: top;
+    animation: reveal 0.25s ease-out;
+}
+
+.my-account .dropdown-item {
+    padding: 1rem 0.75rem;
+    color: var(--font-light-color);
+}
+
+.my-account .dropdown-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar-nav button {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: transparent;
+    margin-right: 15px;
+    border: 2px solid var(--font-light-color);
+}

@@ -1,0 +1,63 @@
+.profile {
+    background-color: var(--primary-light-color);
+    padding: 1rem 0.5rem;
+    box-shadow: 2px 2px 15px 4px rgb(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.profile i {
+    color: var(--primary-dark-color);
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+}
+
+.profile p {
+    margin-bottom: 5px;
+}
+
+.profile-panel a {
+    color: var(--font-dark-color);
+}
+
+.profile-login-panel a:hover {
+    color: var(--font-light-color);
+}
+
+/* image edit button*/
+.profile .edit-ic {
+    position: relative;
+    display: inline-block;
+}
+
+.profile .edit-ic button {
+    position: absolute;
+    left: -5px;
+    top: 10px;
+}
+
+/* edit profile button */
+.profile .edit-profile {
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.profile .profile-panel button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary-dark-color);
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+}
+
+.profile .profile-panel button:hover {
+    color: var(--font-light-color);
+    background-color: var(--secondary-color);
+}

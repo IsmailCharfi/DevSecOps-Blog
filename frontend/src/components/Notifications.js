@@ -74,14 +74,14 @@ const Notifications = ({ notifications, markNotificationRead }) => {
             onClick={() => setOpen((prev) => !prev)}
         >
             <span className="custom-tooltip" data-text="Your notifications">
-                <a className="text-light nav-link">
+                <div className="text-light nav-link">
                     <i className="far fa-bell"></i>
                     {unreadNotifications.length > 0 && (
                         <span className="badge rounded-pill badge-notification bg-danger">
                             {unreadNotifications.length}
                         </span>
                     )}
-                </a>
+                </div>
             </span>
             <div className="custom-dropdown-menu">{renderNotifications()}</div>
         </li>

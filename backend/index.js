@@ -6,6 +6,7 @@ const userRoute = require("./resources/users/users.routes");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
+require("dotenv").config();
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,11 +19,9 @@ app.use("/posts", postRoute);
 mongoose.set("strictQuery", false);
 
 mongoose
-  .connect(
-    "mongodb+srv://Ismail:plKgbbWaoqHSPawi@cluster0.rjsok.mongodb.net/?retryWrites=true&w=majority"
-  )
+  .connect(process.env.DATABASE_URL)
   .catch(() => console.log("error connecting to the database"));
 
-app.listen(4000, () => {
-  console.log("listening to port 4000");
+app.listen(process.env.PORT, () => {
+  console.log(`listening to port ${process.env.PORT}`);
 });
